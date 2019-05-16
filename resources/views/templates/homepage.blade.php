@@ -7,7 +7,6 @@
 @include('partials.header')
 
 
-
 <!-- NAVBAR -->
 @include('partials.nav')
 
@@ -18,15 +17,18 @@
     <div id="main-container-image">
       	<section class="work">
           <!-- /PORTFOLIO -->
-          @include('ressources.index')
+          @section('content')
+          {{-- @include('ressources.index') --}}
+
           <!-- /PORTFOLIO -->
 	       </section>
         <!-- PAGINATOR -->
         @include('partials.paginator')
         <!-- /PAGINATOR -->
+
+              @show
       </div>
     </div>
-
       <!-- footer -->
         @include('partials.footer')
       <!-- /footer -->

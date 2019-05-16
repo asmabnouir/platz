@@ -2,6 +2,7 @@
 	resources/views/partials/nav.blade.php
 	 --}}
 
+
 	@include('categories.index')
 
 	<div id="main-container-menu" class="object">

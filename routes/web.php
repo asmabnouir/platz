@@ -17,6 +17,5 @@ View::composer('categories.index', function($view){
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
-
-Route::get('/', 'RessourceController@index')->name('templates/homepage');
-Route::resource('ressources', 'RessourceController');
+Route::get('/', 'RessourceController@index');
+Route::get('ressources/{id}', 'RessourceController@show');
